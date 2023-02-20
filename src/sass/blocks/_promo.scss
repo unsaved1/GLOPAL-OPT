@@ -1,0 +1,114 @@
+.promo{
+    padding: 22px 0 82px 0;
+    min-height: 680px;
+    background: url(../../img/bg/first-bg.png) no-repeat;
+    background-size: cover;
+    .header{
+        &__nav{
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__menu{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style-type: none;
+            
+            &-item{
+                border-right: 1px dotted #fff;
+                padding: 0 15px;
+                &:nth-child(6){
+                    border-right: none;
+                }
+                a{
+                    font-size: 15px;
+                    &:hover{
+                        color: $orange;
+                        text-decoration-line: underline;
+                        text-underline-offset: 20%;
+                    }
+                }
+            }
+        }
+        &__number{
+            display: flex;
+            flex-direction: column;
+            span{
+                text-align: right;
+                font-weight: 300;
+                font-size: 14px;
+                color: #FFFFFF;
+            }
+        }
+        &__phone{
+            font-size: 19px;
+        }
+    }
+
+
+
+    &__subtitle-over{
+        margin-top: 9px;
+        font-weight: 300;
+        font-size: 24px;
+        text-align: center;
+    }
+    &__subtitle{
+        text-align: center;
+    }
+    &__title{
+        margin: 0;
+        margin-top: 26px;
+        line-height: 72px;
+        font-size: 72px;
+        font-weight: 700;
+        text-align: center;
+        color: $orange;
+    }
+    &__line-container{
+        margin: 40px auto;
+        width: 810px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__line{
+        background-color: #fff;
+        height: 1px;
+        width: 390px;
+    }
+    &__circle{
+        width: 7px;
+        height: 7px;
+        border-radius: 100%;
+        background-color: #fff;
+    }
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        max-width: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__icon{
+        width: 63px;
+        height: 63px;
+    }
+    &__descr{
+        margin-top: 6px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    &__btn{
+        display: block;
+        margin: 40px auto;
+    }
+}
