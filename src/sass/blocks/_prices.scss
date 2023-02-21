@@ -1,0 +1,72 @@
+.prices{
+    padding-top: 50px;
+    min-height: 550px;
+    &__text{
+        margin: 0 auto;
+        width: 700px;
+        margin-top: 18px;
+        font-weight: 300;
+        font-size: 21px;
+        text-align: center;
+        color: #2E2E2E;
+    }
+    &__wrapper{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon{
+        height: 60px;
+    }
+    &__item{
+        padding-top: 1px;
+        padding-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 267px;
+        height: 357px;
+        background: #FFFFFF;
+        border: 1px solid #E9E9E9;
+        &-head{
+            width: 261px;
+            height: 60px;
+            background: #25333C;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-subtitle{
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #2E2E2E;
+        }
+        &-title{
+            font-weight: 400;
+            font-size: 28px;
+            text-align: center;
+            color: #EC644B;
+        }
+        &-descr{
+            width: 260px;
+            min-height: 65px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: #2E2E2E;
+        }
+    }
+    &__btn{
+        transition: 0.3s all;
+        a{
+            color: #fff;
+        }
+        &:hover{
+            box-shadow: 0px 1px 2px #ea2704;
+        }
+    }
+}

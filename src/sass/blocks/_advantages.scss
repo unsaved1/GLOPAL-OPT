@@ -3,8 +3,9 @@
     min-height: 590px;
     background-color: #F3F3F3;
     &__wrapper{
+        margin-top: 20px;
         display: grid;
-        grid-template: repeat(auto-fit, minmax(60px, auto)) / repeat(auto-fit, minmax(488px, 526px));
+        grid-template: repeat(auto-fit, minmax(60px, auto)) / repeat(2, minmax(488px, 526px));
         gap: 40px 60px;
     }
     &__item{
