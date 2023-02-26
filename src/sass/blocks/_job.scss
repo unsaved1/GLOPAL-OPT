@@ -3,7 +3,7 @@
     padding: 54px 0 58px 0;
     &__descr{
         margin: 0 auto;
-        width: 850px;
+        max-width: 850px;
         margin-top: 16px;
         font-weight: 300;
         font-size: 21px;
@@ -12,12 +12,16 @@
     }
     &__wrapper{
         margin-top: 50px;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        gap: 30px;
     }
     &__item{
-        width: 360px;
+        max-width: 360px;
         min-height: 360px;
+        img{
+            width: 100%;
+        }
     }
     &__subtitle{
         margin-top: 30px;

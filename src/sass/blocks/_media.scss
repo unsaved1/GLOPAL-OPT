@@ -1,0 +1,381 @@
+@media (max-width: 1200px){
+    .container{
+        width: 960px;
+    }
+    .promo{
+        .header{
+            &__menu{
+                &-item{
+                    padding: 0 10px;
+                    font-size: 14px;
+                }
+            }
+            &__btn{
+                width: 140px;
+                font-size: 12px;
+            }
+            &__phone{
+                font-size: 14px;
+            }
+        }
+        &__item{
+            max-width: 220px;
+        }
+    }
+    .advantages{
+        &__wrapper{
+            grid-template: repeat(auto-fit, minmax(60px, auto)) / repeat(auto-fit, minmax(auto, 450px));
+        }
+        &__item{
+            grid-template: minmax(60px, auto) / 62px 1fr;
+        }
+    }
+    .job{
+        &__wrapper{
+            grid-template: repeat(2, minmax(360px, auto)) / repeat(2, 360px);
+            justify-content: center;
+        }
+    }
+    .prices{
+        &__wrapper{
+            justify-content: center;
+            justify-items: center;
+            grid-template: repeat(2, 357px) / repeat(2, 360px);
+            row-gap: 27px;
+        }
+    }
+    .footer{
+        &__descr{
+            margin-right: 100px;
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+        width: 760px;
+    }
+    .promo{
+        .header{
+            nav{
+                padding: 0 20px;
+            }
+            &__btn{
+                display: none;
+            }
+            &__menu{
+                &-item{
+                    a{
+                        font-size: 11px;
+                    }
+                }
+            }
+            &__phone{
+                font-size: 13px;
+                align-self: end;
+            }
+        }
+        &__wrapper{
+            display: grid;
+            grid-template: repeat(2, minmax(135px, auto)) / repeat(2, minmax(auto, 260px));
+            row-gap: 15px;
+        }
+        &__title{
+            font-size: 50px;
+        }
+        &__line-container{
+            width: 720px;
+        }
+        &__line{
+            width: 345px;
+        }
+        &__descr{
+            font-size: 12px;
+        }
+    }
+    .title{
+        &_fz24{
+            font-size: 20px;
+        }
+        &_fz26{
+            font-size: 23px;
+        }
+        &_fz42{
+            font-size: 30px;
+        }
+    }
+    .advantages{
+        &__wrapper{
+            grid-template: repeat(auto-fit, minmax(60px, auto)) / repeat(auto-fit, minmax(auto, 340px));
+        }
+    }
+    .job{
+        &__wrapper{
+            column-gap: 20px;
+        }
+    }
+    .schemes{
+        &__descr{
+            width: 200px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        &__item{
+            margin: 40px 10px;
+        }
+    }
+    .question{
+        &__header{
+            max-width: 740px;
+        }
+        &__form{
+            max-width: 740px;
+        }
+        &__wrapper{
+            grid-template: 47px repeat(2, 73px) / repeat(3, 220px);
+        }
+    }
+    .footer{
+        &__descr{
+            font-size: 14px;
+            margin: 0;
+        }
+        &__phone{
+            font-size: 14px;
+        }
+        &__btn{
+            width: 140px;
+            font-size: 11px;
+        }
+        &__text{
+            margin: 0;
+        }
+        &__policy{
+            margin: 0;
+        }
+    }
+}
+@media (min-width: 769px){
+    .promo{
+        .header{
+            &__subtitle{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 540px;
+    }
+    a{
+        &:hover{
+            color: #fff;
+        }
+    }
+    .btn{
+        &:hover{
+            box-shadow: none;
+        }
+    }
+    .promo{
+        .header{
+            nav{
+                padding: 0;
+            }
+            &__menu{
+                display: none;
+            }
+            &__subtitle{
+                display: block;
+                width: 250px;
+                font-weight: 300;
+                font-size: 14px;
+            }
+        }
+        &__subtitle-over{
+            display: none;
+        }
+        &__line-container{
+            width: 540px;
+        }
+        &__line{
+            width: 260px;
+        }
+        .hamburger{
+            display: flex;
+        }
+    }
+    .advantages{
+        &__wrapper{
+            grid-template: repeat(auto-fit, minmax(60px, auto)) /  1fr;
+        }
+    }
+    .job{
+        &__wrapper{
+            justify-content: center;
+            grid-template: repeat(3, minmax(360px, auto)) / repeat(1, 360px);
+        }
+        &__descr{
+            font-size: 16px;
+        }
+    }
+    .agent{
+        &__descr{
+            font-size: 16px;
+        }
+    }
+    .prices{
+        &__wrapper{
+            grid-template: repeat(2, 357px) / repeat(2, 267px);
+            column-gap: 15px;
+        }
+        &__descr{
+            font-size: 16px;
+        }
+    }
+    .consultation{
+        &__wrapper{
+            flex-direction: column;
+            height: 345px;
+        }
+        &__item{
+            margin: 20px auto;
+        }
+    }
+    .managers{
+        &__descr{
+            font-size: 16px;
+        }
+    }
+    .slider{
+        .carousel{
+            &__prev{
+                left: 170px;
+            }
+            &__next{
+                right: 170px;
+            }
+        }
+    }
+    .question{
+        &__wrapper{
+            grid-template: repeat(3, 47px) 73px / repeat(2, 220px);
+        }
+        &__textarea{
+            grid-column: 2/3;
+            grid-row: 1/4;
+        }
+        &__btn{
+            grid-column: 1/3;
+        }
+    }
+    .footer{
+        &__descr{
+            font-size: 12px;
+        }
+        &__btn{
+            display: none;
+        }
+    }
+}
+@media (max-width: 576px){
+    .container{
+        width: 100%;
+        padding: 10px;
+    }
+    .promo{
+        .header{
+            &__subtitle{
+                display: none;
+            }
+        }
+        &__line-container{
+            width: 100%;
+        }
+        &__line{
+            width: 47%;
+        }
+        &__wrapper{
+            grid-template: repeat(4, minmax(135px, auto)) / 1fr;
+
+        }
+        &__title{
+            font-size: 32px;
+            line-height: 50px;
+        }
+        &__subtitle{
+            margin-top: 15px;
+            font-size: 18px;
+        }
+    }
+    .job{
+        &__wrapper{
+            grid-template: repeat(3, minmax(360px, auto)) / 1fr;
+            justify-items: center;
+        }
+    }
+    .prices{
+        &__wrapper{
+            grid-template: repeat(4, 357px) / 1fr;
+        }
+    }
+    .consultation{
+        &__wrapper{
+            padding: 20px;
+        }
+        &__item{
+            width: 260px;
+        }
+    }
+    .slider{
+        width: 100%;
+        .carousel{
+            &__prev{
+                left: 20%;
+            }
+            &__next{
+                right: 20%;
+            }
+        }
+    }
+    .question{
+        &__wrapper{
+            grid-template: repeat(3, 47px) repeat(2, 73px) / 220px;
+        }
+        &__textarea{
+            grid-column: 1/3;
+            grid-row: 4/5;
+        }
+        &__btn{
+            grid-column: 1/3;
+            grid-row: 5/6;
+        }
+        input{
+            grid-column: 1;
+        }
+    }
+    .footer{
+        &__header{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__logo{
+            margin-right: 10px;
+        }
+        &__descr{
+            font-size: 12px;
+            width: 200px;
+        }
+        &__down{
+            margin-top: 16px;
+            height: unset;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__text{
+            height: 32px;
+        }
+    }
+}

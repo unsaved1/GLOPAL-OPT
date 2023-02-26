@@ -1,4 +1,5 @@
 .promo{
+    position: relative;
     padding: 22px 0 82px 0;
     min-height: 680px;
     background: url(../../img/bg/first-bg.png) no-repeat;
@@ -52,7 +53,6 @@
     &__subtitle-over{
         margin-top: 9px;
         font-weight: 300;
-        font-size: 24px;
         text-align: center;
     }
     &__subtitle{
@@ -85,13 +85,18 @@
         border-radius: 100%;
         background-color: #fff;
     }
-
-    &__wrapper{
+    &__container{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, minmax(auto, 380px));
+        place-items: center;
     }
     &__item{
         max-width: 260px;
+        min-height: 135px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -99,6 +104,14 @@
     &__icon{
         width: 63px;
         height: 63px;
+        &_mr20{
+            margin-right: 20px;
+        }
+        img{
+            width: 100%;
+            min-height: 48px;
+            max-height: 63px;
+        }
     }
     &__descr{
         margin-top: 6px;

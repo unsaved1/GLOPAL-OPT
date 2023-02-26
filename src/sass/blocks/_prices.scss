@@ -1,9 +1,9 @@
 .prices{
     padding-top: 50px;
     min-height: 550px;
-    &__text{
+    &__descr{
         margin: 0 auto;
-        width: 700px;
+        max-width: 700px;
         margin-top: 18px;
         font-weight: 300;
         font-size: 21px;
@@ -12,8 +12,9 @@
     }
     &__wrapper{
         margin-top: 30px;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(4, 267px);
+        column-gap: 27px;
     }
     &__icon{
         height: 60px;
@@ -24,9 +25,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
-        width: 267px;
-        height: 357px;
+        align-items: center;    
         background: #FFFFFF;
         border: 1px solid #E9E9E9;
         &-head{

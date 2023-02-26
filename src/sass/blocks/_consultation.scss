@@ -12,7 +12,7 @@
         height: 166px;
         border: 1px solid rgba(0, 0, 0, 0.21);
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
     &__item{
@@ -23,13 +23,14 @@
         padding-right: 10px;
         border-radius: 24px;
         font-size: 14px;
+        margin: 0 2px;
     }
     &__icon{
         width: 120px;
         height: 120px;
         background-color: #fff;
         position: absolute;
-        top: -40%;
+        top: -62px;
         left: 50%;
         transform: translateX(-50%);
         img{
@@ -38,7 +39,7 @@
     }
     &__btn{
         position: absolute;
-        bottom: -13%;
+        bottom: -22px;
         left: 50%;
         transform: translateX(-50%);
     }

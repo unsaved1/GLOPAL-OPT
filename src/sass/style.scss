@@ -19,6 +19,9 @@ body{
 a{
     color: #fff;
     text-decoration: none;
+    &:hover{
+        color: $orange;
+    }
 }
 .devider{
     width: 148px;
@@ -39,4 +42,10 @@ a{
 @import 'blocks/consultation';
 @import 'blocks/managers';
 @import 'blocks/schemes';
-
+@import 'blocks/reviews';
+@import 'blocks/slider';
+@import 'blocks/question';
+@import 'blocks/map';
+@import 'blocks/footer';
+@import 'blocks/media';
+@import 'blocks/hamburger';
